@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body { height:100%; }
+body { font-family: ui-sans-serif, system-ui, -apple-system; background:linear-gradient(180deg,#f7f7f8 0%, #f0f4f8 100%); color:#0f172a; }
+.container { max-width:1200px; }
+.input { @apply block w-full p-3 rounded border border-gray-200 bg-white mb-3 shadow-sm; }
+.btn { @apply inline-block px-4 py-2 rounded bg-slate-900 text-white hover:bg-slate-800 transition; }
+.btn-outline { @apply inline-block px-4 py-2 rounded border border-slate-300 text-slate-700 hover:bg-slate-50 transition; }
+.card { @apply bg-white p-6 rounded-lg shadow-md border border-gray-100 mb-4; }
+.heading { @apply text-2xl font-extrabold mb-2 text-slate-800; }
+.label { @apply block text-sm font-medium mb-1 text-slate-600; }
+
+/* small utilities */
+.subtle { color: #64748b; }
+.muted { color: #94a3b8; font-size: 0.95rem }
+
+/* responsive header tweaks */
+header { @apply flex flex-col md:flex-row md:items-center md:justify-between; }
+header h1 { @apply text-2xl md:text-3xl; }
+.container nav a { @apply text-sm text-slate-700 hover:text-slate-900; }
+
+
+/* Soft gradient background */
+body {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card-like container */
+.container {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: box-shadow .2s ease;
+}
+
+.container:hover {
+  box-shadow: 0 6px 26px rgba(0,0,0,0.1);
+}
+
+/* Header title effect */
+h1 {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Role badge */
+.role-badge {
+  font-weight: 600;
+  letter-spacing: .3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Main card feel */
+.home-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: box-shadow .25s ease;
+}
+
+.home-card:hover {
+  box-shadow: 0 6px 22px rgba(0,0,0,0.1);
+}
+
+/* Section boxes */
+.home-box {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+
+.home-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Heading with slight gradient */
+.home-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: .45rem 1rem;
+  border-radius: 8px;
+  font-size: .875rem;
+  font-weight: 600;
+  transition: background .15s ease, transform .15s ease;
+}
+
+/* Primary action button */
+.primary-btn {
+  background: #6366f1;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+.secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary-btn:hover {
+  background: #d1d5db;
+  transform: translateY(-2px);
+}
+
+/* Note section */
+.subtle-note {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
