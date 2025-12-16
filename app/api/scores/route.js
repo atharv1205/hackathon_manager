@@ -19,7 +19,7 @@ export async function POST(req) {
     await s.save()
     // Update team aggregated stats so other users see the latest evaluation immediately
     try {
-      const Team = (await import('../../../../lib/models/Team')).default
+      // use the statically imported Team model above
       // compute new avg and count for that team
       const agg = await Score.aggregate([
         { $match: { team: s.team } },
